@@ -34,8 +34,8 @@ void PrintArray(int[,] arr)								//Метод печати массива
 	}
 	System.Console.WriteLine();
 }
-int CellFromMatrixMultiplication(int[,] arrayA, int[,] arrayB, int numString, int numColumn)		//Метод вычесления значений ячейки
-{																									//матрици в результате умножения матриц
+int CellFromMatrixMultiplication(int[,] arrayA, int[,] arrayB, int numString, int numColumn)	//Метод вычесления значений ячейки
+{																								//матрицы в результате умножения матриц
 	int result = 0;
 	for (int i = 0; i < arrayA.GetLength(0); i++)
 	{

@@ -7,12 +7,12 @@
 // Номер строки с наименьшей суммой элементов: 1 строка
 // (допускается указывать индекс строки в массиве, в данном примере - 0)
 
-int DataEntry(string message)
+int DataEntry(string message)                           //Метод ввода данных
 {
 	Console.Write(message);
 	return Convert.ToInt32(Console.ReadLine());
 }
-void FillArray(int[,] arr)
+void FillArray(int[,] arr)								//Метод заполнения массива
 {
 	Random rnd = new Random();
 	for (int i = 0; i < arr.GetLength(0); i++)
@@ -23,7 +23,7 @@ void FillArray(int[,] arr)
 		}
 	}
 }
-void PrintArray(int[,] arr)
+void PrintArray(int[,] arr)								//Метод печати массива
 {
 	for (int i = 0; i < arr.GetLength(0); i++)
 	{
@@ -35,7 +35,7 @@ void PrintArray(int[,] arr)
 	}
 	System.Console.WriteLine();
 }
-int SumOFString(int[,] arr, int i)
+int SumOFString(int[,] arr, int i)						//Метод вычисления суммы элементов строки
 {
 	int sum = 0;
 	for (int j = 0; j < arr.GetLength(1); j++)
@@ -44,8 +44,7 @@ int SumOFString(int[,] arr, int i)
 	}
 	return sum;
 }
-
-int SearchStringWithMinSum(int[,] arr)
+int SearchStringWithMinSum(int[,] arr)					//Метод поиска строки с минимальной суммой элементов
 {
 	int strnumber = 0;
 	int temp = SumOFString(arr, 0);

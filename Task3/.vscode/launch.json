@@ -1,4 +1,4 @@
-{
+ {
 	// Используйте IntelliSense, чтобы узнать о возможных атрибутах.
 	// Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
 	// Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
@@ -9,9 +9,9 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "build",
-			"program": "${workspaceFolder}/Task1/bin/Debug/net6.0/task1.dll",
+			"program": "${workspaceFolder}/bin/Debug/net6.0/task3.dll",
 			"args": [],
-			"cwd": "${workspaceFolder}/Task1",
+			"cwd": "${workspaceFolder}",
 			"console": "internalConsole",
 			"stopAtEntry": false
 		},
